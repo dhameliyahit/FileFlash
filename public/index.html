@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Sharing Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        #fileInput, #fileCode {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+        }
+        #fileCode {
+            color: black; /* Changed color to black */
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #message {
+            text-align: center;
+            margin-top: 20px;
+            color: #007bff;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+        @media screen and (max-width: 600px) {
+            #fileInput, #fileCode {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>File Sharing Website</h1>
+    <h2>Upload File</h2>
+    <input type="file" id="fileInput">
+    <button onclick="uploadFile()">Upload</button>
+    <h2>File Received</h2>
+    <input type="text" id="fileCode" placeholder="Enter code">
+    <button onclick="downloadFile()">Download</button>
+    <div id="message"></div>
+    <footer>Developed by Dhameliya Hit</footer> <!-- Added footer -->
+    <script src="script.js"></script>
+</body>
+</html>
